@@ -31,7 +31,7 @@ const AddedProduct = () => {
         <p></p>
       </div>
       <div className=''>
-      { searchResults.length > 0 && displayProducts.map((el,id)=>{
+      {  displayProducts.map((el,id)=>{
         return (<div key={id} className='flex items-center justify-between mx-0 my-4 border-b border-gray-200'>
           <p className='flex items-center pb-4 px-4'>{id+1}</p>
           <p className='flex items-center  pb-4 px-4'> {el.name}</p>
