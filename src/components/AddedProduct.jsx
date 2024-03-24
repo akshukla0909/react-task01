@@ -15,32 +15,10 @@ const AddedProduct = () => {
 
   return (
     <div className='mx-5 mt-5'>
-<<<<<<< HEAD
       <div className='prod-list-dash'>
         <div className='flex items-center justify-between px-16'>
           <p className='bg-red-00 flex items-center h-16'>Product List Details</p>
         </div>
-=======
-<div className='prod-list-dash'>
-       <div className='flex items-center justify-between px-16'>
-       <p className='bg-red-00 flex items-center h-16'>Product List Details</p>
-       </div>
- 
-     <div className='prod-cards px-16'>
-      <div className='bg-[#e5e7eb] rounded-lg rounded-b-none h-10 flex justify-between items-center px-4'>
-        <p className='-px-10'>Id</p>
-        <p className='-px-10'>Name</p>
-        <p className='px-10'>Price</p>
-        <p></p>
-      </div>
-      <div className=''>
-      {  displayProducts.map((el,id)=>{
-        return (<div key={id} className='flex items-center justify-between mx-0 my-4 border-b border-gray-200'>
-          <p className='flex items-center pb-4 px-4'>{id+1}</p>
-          <p className='flex items-center  pb-4 px-4'> {el.name}</p>
-          <p className='flex items-center pb-4 px-4'>${el.price}</p>
-          <p className='flex items-center pb-4 px-4'>❌</p>
->>>>>>> d289c7d7b78e1c245e5a8557c430d28ab6510020
 
         <div className='prod-cards px-16'>
           <div className='bg-[#e5e7eb] rounded-lg rounded-b-none h-10 flex justify-between items-center px-4'>
@@ -65,8 +43,4 @@ const AddedProduct = () => {
   );
 };
 
-<<<<<<< HEAD
 export default AddedProduct;
-=======
-export default AddedProduct
->>>>>>> d289c7d7b78e1c245e5a8557c430d28ab6510020
