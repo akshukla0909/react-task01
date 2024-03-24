@@ -21,13 +21,13 @@ const Home = () => {
     }
 
     // watch if token avail or not
-    useEffect(() =>{
+    // useEffect(() =>{
 
-        if(!localStorage.getItem('token')) { 
-            navigate('/login')
-        }
+    //     if(!localStorage.getItem('token')) { 
+    //         navigate('/login')
+    //     }
 
-    },[localStorage.getItem('token')])
+    // },[localStorage.getItem('token')])
     
 
        

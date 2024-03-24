@@ -10,7 +10,7 @@ const ProductForm = () => {
 
     const handleForm = (e)=>{
         e.preventDefault();
-        if(name===""){return toast.error("enter a name") }
+        if(name=== ""){return toast.error("enter a name") }
         addProduct({name, price})
 
         setproductName("")

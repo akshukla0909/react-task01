@@ -1,4 +1,4 @@
-import React, { createContext, useState } from 'react'
+import React, { createContext, useEffect, useState } from 'react'
 import toast from 'react-hot-toast';
 
 export const ProductContext = createContext({
@@ -12,7 +12,7 @@ export const ProductContext = createContext({
 const ProductProvider = ({children}) => {
 
     const [products, setProducts] = useState([]);
-    const [searchResults, setSearchResults] = useState([]);
+    const [searchResults, setSearchResults] = useState("");
 
     const addProduct = (elem) => {
       const existingProduct = products.find(
@@ -29,15 +29,11 @@ const ProductProvider = ({children}) => {
     };
 
     const searchProduct = (searchData) => {
-      // console.log(searchData);
-     const filteredProducts = products.filter(product => product.name.toLowerCase().includes(searchData.toLowerCase()));
-     console.log(typeof(filteredProducts));
-      console.log(filteredProducts);
-       setSearchResults(filteredProducts)
+       setSearchResults(searchData)
     };
 
   return (
-    <ProductContext.Provider value={{products,setProducts, addProduct, searchProduct, searchResults}}>
+    <ProductContext.Provider value={{products , searchResults,setProducts, addProduct, searchProduct}}>
           {children}
     </ProductContext.Provider>
   )
